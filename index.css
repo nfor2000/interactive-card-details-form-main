@@ -1,0 +1,125 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+}
+.container1{
+     position: relative;
+     height: 31vh;
+     background:url(images/bg-main-mobile.png) center center/cover;
+     margin-bottom: 6rem;
+}
+.container1 > div{
+     height: 20vh;
+     width: 75%;
+}
+.card_back{
+     position: absolute;
+     left: 20%;
+     top: 12%;
+     background-image: url(images/bg-card-back.png);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: 100% 140%;
+     border-radius: 5px;
+     color:hsl(0, 0%, 100%);
+}
+.cvc_el{
+     position: absolute;
+     top: 45%;
+     right: 2rem;
+}
+.card_front{
+     position: absolute;
+     top: 50%;
+     left: 5%;
+     background: url(images/bg-card-front.png) center center/cover;
+     border-radius: 5px;
+     padding: 1rem;
+     color: hsl(0, 0%, 100%);
+     box-shadow: 0px 20px 40px hsla(0, 0%, 0%, 0.349);
+}
+.logo{
+     width: 50px;
+     margin-bottom: 1.4rem;
+}
+.card_number_el{
+     width: 100%;
+     text-align: center;
+     font-size: 22px;
+     margin-bottom: .8rem;
+     letter-spacing: 1px;
+     height: 22px;
+     overflow: hidden;
+}
+.date_name{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.name{
+     text-transform: uppercase;
+}
+.date{
+     font-size: 20px;
+}
+.container2{
+     padding: 1rem;
+     color: hsl(278, 68%, 11%)  ;
+}
+.inputfield{
+     margin-bottom: 1.5rem;
+}
+.inputfield label{
+     display: block;
+     margin-bottom: .5rem;
+     font-weight: 500;
+}
+.inputfield  input{
+     position: relative;
+     width: 100%;
+     padding:.5rem 1rem ;
+     font-size: 18px;
+     font-weight: 600;
+     border-radius: 5px;
+     border: 1px solid hsl(270, 3%, 87%);
+     outline: none;
+}
+.inputfield  input::placeholder{
+     color: hsl(270, 3%, 87%);
+}
+.inputfield > .box{
+     width: 100%;
+     padding: 1px;
+     border-radius: 5px;
+}
+.focus{
+     background:linear-gradient(to left,hsl(249, 99%, 64%),hsl(278, 94%, 30%));
+}
+.date_cvc{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     gap: .5rem;
+}
+.date.inputfield{
+     display: grid;
+     grid-template-areas: "area1 area1" "area2 area3";
+}
+.date.inputfield label{
+     grid-area: area1;
+     font-size: 18px;
+}
+.cvc label{
+     font-size: 18px;
+     margin-bottom: .5rem;
+}
+input[type=submit]{
+     width: 100%;
+     padding: 1rem;
+     border: none;
+     border-radius: 10px;
+     background-color: hsl(278, 68%, 11%);
+     color: hsl(0, 0%, 100%);
+     font-size: large;
+}
